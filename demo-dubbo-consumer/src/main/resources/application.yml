@@ -1,0 +1,14 @@
+server:
+  port: 9092
+  
+spring:
+  dubbo:
+    application:
+      id: demo-dubbo-provider
+      name: demo-dubbo-provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    server: true
+    protocol:
+      name: dubbo
+      port: 20880
